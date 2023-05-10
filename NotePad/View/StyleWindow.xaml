@@ -1,0 +1,24 @@
+﻿<Window x:Class="NotePad.View.StyleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad.View"
+        xmlns:vm="clr-namespace:NotePad.ViewModel"
+        mc:Ignorable="d"
+        Title="Style" Height="130" Width="351" ResizeMode="NoResize" Background="{DynamicResource TB_BG}">
+    <Window.DataContext>
+        <vm:SettingsVM/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Content="{DynamicResource LANG_Style}" Width="auto"  Margin="0,12,10,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="26" Foreground="{DynamicResource TB_FG}"/>
+        <ComboBox ItemsSource="{Binding Themes}" SelectedItem="{Binding SelectedTheme}" Margin="29,12,30,0" Grid.Column="1" Height="26" VerticalAlignment="Top"/>
+        <Label Grid.Column="0" Content="{DynamicResource LANG_Language}" Width="auto"  Margin="0,56,10,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="26" Background="{DynamicResource TB_BG}" Foreground="{DynamicResource TB_FG}"/>
+        <ComboBox ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}" Margin="29,56,30,0" Grid.Column="1" Height="26" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

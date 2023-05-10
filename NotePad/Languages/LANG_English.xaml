@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:String x:Key="LANG_FileOpen">Open</System:String>
+    <System:String x:Key="LANG_FileSave">Save</System:String>
+    <System:String x:Key="LANG_FileSaveAs">Save as...</System:String>
+    <System:String x:Key="LANG_FileExit">Exit</System:String>
+    <System:String x:Key="LANG_FileOptions">Settings</System:String>
+    <System:String x:Key="LANG_FileFont">Font</System:String>
+    <System:String x:Key="LANG_FileStyle">Style</System:String>
+    <System:String x:Key="LANG_File">File</System:String>
+    <System:String x:Key="LANG_Font">Font: </System:String>
+    <System:String x:Key="LANG_FontSize">Size: </System:String>
+    <System:String x:Key="LANG_Style">Theme: </System:String>
+    <System:String x:Key="LANG_Language">Language: </System:String>
+</ResourceDictionary>

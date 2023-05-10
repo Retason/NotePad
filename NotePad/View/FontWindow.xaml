@@ -1,0 +1,27 @@
+﻿<Window x:Class="NotePad.View.FontWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad.View"
+        xmlns:vm="clr-namespace:NotePad.ViewModel"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="FontWindow" Height="120" Width="230" Background="{DynamicResource TB_BG}" Foreground="{x:Null}">
+    <Window.DataContext>
+        <vm:SettingsVM/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox ItemsSource="{Binding Fonts}" SelectedItem="{Binding SelectedFont}" Width="120" Margin="10,12,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+        <TextBox TextWrapping="Wrap" Text="{Binding FontSize, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" Margin="31,42,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="28" Grid.Column="1" Background="{DynamicResource TB_BG}" Foreground="{DynamicResource TB_FG}"/>
+        <Button Command="{Binding FontUpCommand}" Content="+" Margin="59,42,0,0" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="21" Grid.Column="1"/>
+        <Button Command="{Binding FontDownCommand}" Content="-" Margin="10,42,0,0" RenderTransformOrigin="1.119,0.521" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Width="21" Grid.Column="1"/>
+        <Label Content="{DynamicResource LANG_Font}" Margin="0,2,11,0" Height="37" VerticalAlignment="Top" Foreground="{DynamicResource TB_FG}"/>
+        <Label Content="{DynamicResource LANG_FontSize}" Margin="0,40,11,0" Height="37" VerticalAlignment="Top" Foreground="{DynamicResource TB_FG}"/>
+
+    </Grid>
+</Window>

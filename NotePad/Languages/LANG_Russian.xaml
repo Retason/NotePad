@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:System="clr-namespace:System;assembly=mscorlib">
+    <System:String x:Key="LANG_FileOpen">Открыть</System:String>
+    <System:String x:Key="LANG_FileSave">Сохранить</System:String>
+    <System:String x:Key="LANG_FileSaveAs">Сокранить как...</System:String>
+    <System:String x:Key="LANG_FileExit">Выход</System:String>
+    <System:String x:Key="LANG_FileOptions">Настройки</System:String>
+    <System:String x:Key="LANG_FileFont">Шрифта</System:String>
+    <System:String x:Key="LANG_FileStyle">Вида</System:String>
+    <System:String x:Key="LANG_File">Файл</System:String>
+    <System:String x:Key="LANG_Font">Шрифт: </System:String>
+    <System:String x:Key="LANG_FontSize">Размер: </System:String>
+    <System:String x:Key="LANG_Style">Тема: </System:String>
+    <System:String x:Key="LANG_Language">Язык: </System:String>
+</ResourceDictionary>
